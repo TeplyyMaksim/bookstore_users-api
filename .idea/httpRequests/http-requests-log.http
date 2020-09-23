@@ -1,0 +1,292 @@
+GET http://localhost:1323/users/10
+Content-Type: application/json
+
+{}
+
+<> 2020-09-23T082646.200.json
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "id": 10,
+  "first_name": "Maksym",
+  "last_name": "Teplyy",
+  "email": "teplyy.maksim@gmail.com",
+  "date_created": ""
+}
+
+<> 2020-09-23T082642.201.json
+
+###
+
+GET http://localhost:1323/users/1024242
+Content-Type: application/json
+
+{}
+
+<> 2020-09-23T082637.404.json
+
+###
+
+GET http://localhost:1323/users/asdasdasd
+Content-Type: application/json
+
+{}
+
+<> 2020-09-23T082630.400.json
+
+###
+
+GET http://localhost:1323/users/asdasdasd
+Content-Type: application/json
+
+{}
+
+<> 2020-09-23T082600.400.json
+
+###
+
+GET http://localhost:1323/users/1024242
+Content-Type: application/json
+
+{}
+
+<> 2020-09-23T082551.404.json
+
+###
+
+GET http://localhost:1323/users/asdasdasd
+Content-Type: application/json
+
+{}
+
+<> 2020-09-23T075417.400.json
+
+###
+
+GET http://localhost:1323/users/asdasdasd
+Content-Type: application/json
+
+{}
+
+<> 2020-09-23T075343.200.txt
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "id": 10,
+  "first_name": "Maksym",
+  "last_name": "Teplyy",
+  "email": "teplyy.maksim@gmail.com",
+  "date_created": ""
+}
+
+<> 2020-09-23T072321.400.json
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "id": 10,
+  "first_name": "Maksym",
+  "last_name": "Teplyy",
+  "email": "teplyy.maksim@gmail.com",
+  "date_created": ""
+}
+
+<> 2020-09-23T072313.201.json
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "id": 10,
+  "first_name": "Maksym"
+}
+
+<> 2020-09-23T072310.400.json
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "id": 10,
+  "first_name": "Maksym"
+}
+
+<> 2020-09-22T103825.200.json
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "id": 10,
+  "first_name": "Maksym"
+}
+
+<> 2020-09-22T102914.200.json
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "id": 10,
+  "first_name": "Maksym",
+}
+
+<> 2020-09-22T102907.400.json
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "id": 10,
+  "first_name": "Maksym",
+  "last_name": "Teplyy",
+  "email": "teplyy.maksim@gmail.com",
+  "date_created": ""
+}
+
+<> 2020-09-22T102829.200.json
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "id": 10,
+  "first_name": "Maksym",
+  "last_name": "Teplyy",
+  "email": "teplyy.maksim@gmail.com",
+  "date_created": ""
+}
+
+<> 2020-09-22T102809.400.json
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "id": 10,
+  "first_name": "Maksym",
+  "last_name": "Teplyy",
+  "email": "teplyy.maksim@gmail.com",
+  "date_created": ""
+}
+
+<> 2020-09-22T102531.200.json
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "id": 10,
+  "first_name": "Maksym",
+  "last_name": "Teplyy",
+  "email": "teplyy.maksim@gmail.com",
+  "date_created": ""
+}
+
+<> 2020-09-22T102139.200.json
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "id": 10,
+  "first_name": "Maksym",
+  "last_name": "Teplyy",
+  "email": "teplyy.maksim@gmail.com",
+  "date_created": ""
+}
+
+<> 2020-09-22T102106.200.txt
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "id": 10,
+  "first_name": "Maksym",
+  "last_name": "Teplyy",
+  "email": "teplyy.maksim@gmail.com",
+  "date_created": ""
+}
+
+<> 2020-09-22T101928.400.json
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "id": 10,
+  "first_name": "Maksym",
+  "last_name": "Teplyy",
+  "email": "teplyy.maksim@gmail.com",
+  "date_created": ""
+}
+
+<> 2020-09-22T101900.400.json
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "id": 10,
+  "first_name": "Maksym",
+  "last_name": "Teplyy",
+  "email": "teplyy.maksim@gmail.com",
+  "date_created": ""
+}
+
+<> 2020-09-22T101834.400.json
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{}
+
+<> 2020-09-22T094138.400.json
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{}
+
+###
+

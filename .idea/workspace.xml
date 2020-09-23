@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1eadd019-4c95-4475-96c8-9ec6848396cc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/application.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/url_mappings.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl/ping/ping_controller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl/users/users_controller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl/users/users_requests.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/users/user_dao.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/users/user_dto.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/users_service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/http.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hroYR8vm4iS1r34iSsc1yeUlqy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/utils" />
+      <recent name="$PROJECT_DIR$/ctrl/users" />
+      <recent name="$PROJECT_DIR$/ctrl/ping" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:1323/users/asdasdasd" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:1323/users/1024242" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;id&quot;: 10,&#10;  &quot;first_name&quot;: &quot;Maksym&quot;,&#10;  &quot;last_name&quot;: &quot;Teplyy&quot;,&#10;  &quot;email&quot;: &quot;teplyy.maksim@gmail.com&quot;,&#10;  &quot;date_created&quot;: &quot;&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;id&quot;: 10,&#10;  &quot;first_name&quot;: &quot;Maksym&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;id&quot;: 10,&#10;  &quot;first_name&quot;: &quot;Maksym&quot;,&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.users_requests#6">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="bookstore_users-api" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="github.com/TeplyyMaksim/bookstore_users-api" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="users_requests#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ctrl/users/users_requests.http" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="users_requests#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ctrl/users/users_requests.http" index="4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="users_requests#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ctrl/users/users_requests.http" index="5" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="users_requests#6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ctrl/users/users_requests.http" index="6" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.users_requests#6" />
+        <item itemvalue="HTTP Request.users_requests#3" />
+        <item itemvalue="HTTP Request.users_requests#5" />
+        <item itemvalue="HTTP Request.users_requests#4" />
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-832" y="-991" key="#Other_File_Types" timestamp="1600799576775">
+      <screen x="-1435" y="-1669" width="3008" height="1669" />
+    </state>
+    <state x="-832" y="-991" key="#Other_File_Types/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1600799576775" />
+    <state x="-1203" y="-1191" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600784378472">
+      <screen x="-1435" y="-1669" width="3008" height="1669" />
+    </state>
+    <state x="-1203" y="-1191" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1600784378472" />
+    <state width="1494" height="480" key="GridCell.Tab.0.bottom" timestamp="1600881960230">
+      <screen x="-1435" y="-1669" width="3008" height="1669" />
+    </state>
+    <state width="1494" height="480" key="GridCell.Tab.0.bottom/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1600881960230" />
+    <state width="1494" height="480" key="GridCell.Tab.0.center" timestamp="1600881960229">
+      <screen x="-1435" y="-1669" width="3008" height="1669" />
+    </state>
+    <state width="1494" height="480" key="GridCell.Tab.0.center/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1600881960229" />
+    <state width="1494" height="480" key="GridCell.Tab.0.left" timestamp="1600881960229">
+      <screen x="-1435" y="-1669" width="3008" height="1669" />
+    </state>
+    <state width="1494" height="480" key="GridCell.Tab.0.left/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1600881960229" />
+    <state width="1494" height="480" key="GridCell.Tab.0.right" timestamp="1600881960230">
+      <screen x="-1435" y="-1669" width="3008" height="1669" />
+    </state>
+    <state width="1494" height="480" key="GridCell.Tab.0.right/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1600881960230" />
+    <state x="-966" y="-1098" width="598" height="490" key="find.popup" timestamp="1600871907718">
+      <screen x="-1435" y="-1669" width="3008" height="1669" />
+    </state>
+    <state x="-966" y="-1098" width="598" height="490" key="find.popup/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1600871907718" />
+    <state x="-1002" y="-1290" width="670" height="676" key="search.everywhere.popup" timestamp="1600880250496">
+      <screen x="-1435" y="-1669" width="3008" height="1669" />
+    </state>
+    <state x="-1002" y="-1290" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1600880250496" />
+  </component>
+</project>

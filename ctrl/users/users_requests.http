@@ -1,0 +1,56 @@
+# Create user wrong data request
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{}
+
+###
+
+# Create user not full data request
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "id": 10,
+  "first_name": "Maksym"
+}
+
+###
+
+# Create user full data request
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "id": 10,
+  "first_name": "Maksym",
+  "last_name": "Teplyy",
+  "email": "teplyy.maksim@gmail.com",
+  "date_created": ""
+}
+
+###
+
+# Get user wrong id request
+GET http://localhost:1323/users/asdasdasd
+Content-Type: application/json
+
+{}
+
+###
+
+# Get user with valid id that doesn't exist
+GET http://localhost:1323/users/1024242
+Content-Type: application/json
+
+{}
+
+###
+
+# Get user with valid id that exists
+GET http://localhost:1323/users/10
+Content-Type: application/json
+
+{}
+
+###

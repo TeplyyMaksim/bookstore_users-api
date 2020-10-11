@@ -20,16 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1eadd019-4c95-4475-96c8-9ec6848396cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/application.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/url_mappings.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ctrl/ping/ping_controller.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ctrl/users/users_controller.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ctrl/users/users_requests.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/users/user_dao.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/users/user_dto.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/users_service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/http.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasources/mysql/users_db/users_db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/date_utils/date_utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/mysql_utils/mysql_utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctrl/users/users_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl/users/users_controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctrl/users/users_requests.http" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl/users/users_requests.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/users/user_dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/users/user_dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/users/user_dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/users/user_dto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/users_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/users_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/errors_utils/http.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +69,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/utils/errors" />
       <recent name="$PROJECT_DIR$/utils" />
       <recent name="$PROJECT_DIR$/ctrl/users" />
       <recent name="$PROJECT_DIR$/ctrl/ping" />
@@ -76,6 +78,22 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:1323/users/1024242" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://localhost:1323/users/asdasdasd" />
@@ -94,7 +112,7 @@
         </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:1323/users/1024242" />
+          <option name="urlBase" value="http://localhost:1323/users/1" />
           <option name="urlPath" value="" />
           <option name="headers">
             <list>
@@ -106,6 +124,54 @@
           </option>
           <option name="haveTextToSend" value="true" />
           <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Maksym&quot;,&#10;  &quot;last_name&quot;: &quot;Teplyy&quot;,&#10;  &quot;email&quot;: &quot;teplyy.maksim@gmail.com&quot;,&#10;  &quot;date_created&quot;: &quot;&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Maksym&quot;&#10;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
@@ -141,8 +207,8 @@
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:1323/users/10" />
           <option name="urlPath" value="" />
           <option name="headers">
             <list>
@@ -153,7 +219,7 @@
             </list>
           </option>
           <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;id&quot;: 10,&#10;  &quot;first_name&quot;: &quot;Maksym&quot;,&#10;}" />
+          <option name="textToSend" value="{}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
@@ -169,23 +235,29 @@
             </list>
           </option>
           <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{}" />
+          <option name="textToSend" value="{&#10;  &quot;id&quot;: 10,&#10;  &quot;first_name&quot;: &quot;Maksym&quot;,&#10;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.users_requests#6">
+  <component name="RunManager" selected="HTTP Request.users_requests#5">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="bookstore_users-api" />
       <working_directory value="$PROJECT_DIR$" />
+      <envs>
+        <env name="mysql_users_username" value="root" />
+        <env name="mysql_users_password" value="12345678" />
+        <env name="mysql_users_host" value="127.0.0.1:3306" />
+        <env name="mysql_users_schema" value="users_db" />
+      </envs>
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/main.go" />
       <package value="github.com/TeplyyMaksim/bookstore_users-api" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="users_requests#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ctrl/users/users_requests.http" index="3" runType="Run single request">
+    <configuration name="users_requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ctrl/users/users_requests.http" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="users_requests#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ctrl/users/users_requests.http" index="4" runType="Run single request">
@@ -197,12 +269,19 @@
     <configuration name="users_requests#6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ctrl/users/users_requests.http" index="6" runType="Run single request">
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Go Build.go build main.go" />
+      <item itemvalue="HTTP Request.users_requests#1" />
+      <item itemvalue="HTTP Request.users_requests#5" />
+      <item itemvalue="HTTP Request.users_requests#6" />
+      <item itemvalue="HTTP Request.users_requests#4" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.users_requests#6" />
-        <item itemvalue="HTTP Request.users_requests#3" />
         <item itemvalue="HTTP Request.users_requests#5" />
         <item itemvalue="HTTP Request.users_requests#4" />
+        <item itemvalue="HTTP Request.users_requests#6" />
+        <item itemvalue="HTTP Request.users_requests#1" />
         <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
@@ -228,26 +307,34 @@
       <screen x="-1435" y="-1669" width="3008" height="1669" />
     </state>
     <state x="-832" y="-991" key="#Other_File_Types/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1600799576775" />
-    <state x="-1203" y="-1191" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600784378472">
+    <state x="-1312" y="-1017" key="#SQL_Dialects" timestamp="1602453408177">
       <screen x="-1435" y="-1669" width="3008" height="1669" />
     </state>
-    <state x="-1203" y="-1191" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1600784378472" />
-    <state width="1494" height="480" key="GridCell.Tab.0.bottom" timestamp="1600881960230">
+    <state x="-1312" y="-1017" key="#SQL_Dialects/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1602453408177" />
+    <state x="-1203" y="-1191" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602453522013">
       <screen x="-1435" y="-1669" width="3008" height="1669" />
     </state>
-    <state width="1494" height="480" key="GridCell.Tab.0.bottom/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1600881960230" />
-    <state width="1494" height="480" key="GridCell.Tab.0.center" timestamp="1600881960229">
+    <state x="-1203" y="-1191" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1602453522013" />
+    <state x="-813" y="-1121" key="EnvironmentVariablesDialog" timestamp="1602448448482">
       <screen x="-1435" y="-1669" width="3008" height="1669" />
     </state>
-    <state width="1494" height="480" key="GridCell.Tab.0.center/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1600881960229" />
-    <state width="1494" height="480" key="GridCell.Tab.0.left" timestamp="1600881960229">
+    <state x="-813" y="-1121" key="EnvironmentVariablesDialog/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1602448448482" />
+    <state width="1494" height="478" key="GridCell.Tab.0.bottom" timestamp="1602454299261">
       <screen x="-1435" y="-1669" width="3008" height="1669" />
     </state>
-    <state width="1494" height="480" key="GridCell.Tab.0.left/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1600881960229" />
-    <state width="1494" height="480" key="GridCell.Tab.0.right" timestamp="1600881960230">
+    <state width="1494" height="478" key="GridCell.Tab.0.bottom/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1602454299261" />
+    <state width="1494" height="478" key="GridCell.Tab.0.center" timestamp="1602454299260">
       <screen x="-1435" y="-1669" width="3008" height="1669" />
     </state>
-    <state width="1494" height="480" key="GridCell.Tab.0.right/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1600881960230" />
+    <state width="1494" height="478" key="GridCell.Tab.0.center/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1602454299260" />
+    <state width="1494" height="478" key="GridCell.Tab.0.left" timestamp="1602454299260">
+      <screen x="-1435" y="-1669" width="3008" height="1669" />
+    </state>
+    <state width="1494" height="478" key="GridCell.Tab.0.left/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1602454299260" />
+    <state width="1494" height="478" key="GridCell.Tab.0.right" timestamp="1602454299261">
+      <screen x="-1435" y="-1669" width="3008" height="1669" />
+    </state>
+    <state width="1494" height="478" key="GridCell.Tab.0.right/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1602454299261" />
     <state x="-966" y="-1098" width="598" height="490" key="find.popup" timestamp="1600871907718">
       <screen x="-1435" y="-1669" width="3008" height="1669" />
     </state>

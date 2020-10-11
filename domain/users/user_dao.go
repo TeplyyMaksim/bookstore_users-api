@@ -1,38 +1,53 @@
 package users
 
 import (
-	"fmt"
-	"github.com/TeplyyMaksim/bookstore_users-api/utils"
+	"github.com/TeplyyMaksim/bookstore_users-api/datasources/mysql/users_db"
+	"github.com/TeplyyMaksim/bookstore_users-api/utils/date_utils"
+	"github.com/TeplyyMaksim/bookstore_users-api/utils/errors_utils"
+	"github.com/TeplyyMaksim/bookstore_users-api/utils/mysql_utils"
 )
 
-var (
-	usersDB = make(map[int]*User)
+const (
+	queryInsertUser = "INSERT INTO users(first_name, last_name, email, date_created) VALUES(?, ?, ?, ?);"
+	queryGetUser = "SELECT id, first_name, last_name, email, date_created FROM users WHERE id=?"
 )
 
-func (user *User) Get() *utils.HttpError {
-	result := usersDB[user.Id]
-
-	if result == nil {
-		return utils.NewNotFoundError(fmt.Sprintf("user %d not found", user.Id))
+func (user *User) Get() *errors_utils.HttpError {
+	stmt, err := users_db.Client.Prepare(queryGetUser)
+	if err != nil {
+		return errors_utils.NewInternalServerError(err.Error())
 	}
+	defer stmt.Close()
 
-	user.Id = result.Id
-	user.FirstName = result.FirstName
-	user.LastName = result.LastName
-	user.Email = result.Email
-	user.DateCreated = result.DateCreated
+	result := stmt.QueryRow(user.Id)
+	if getErr := result.Scan(&user.Id, &user.FirstName, &user.LastName, &user.Email, &user.DateCreated); getErr != nil {
+		return mysql_utils.ParseError(getErr)
+	}
 
 	return nil
 }
 
-func (user *User) Save() *utils.HttpError {
-	current := usersDB[user.Id]
+func (user *User) Save() *errors_utils.HttpError {
+	stmt, err := users_db.Client.Prepare(queryInsertUser)
+	if err != nil {
+		return errors_utils.NewInternalServerError(err.Error())
+	}
+	defer stmt.Close()
 
-	if current != nil {
-		return utils.NewBadRequestError(fmt.Sprintf("user %d already exists", user.Id))
+	user.DateCreated = date_utils.GetNowString()
+
+	insertResult, saveError := stmt.Exec(user.FirstName, user.LastName, user.Email, user.DateCreated)
+
+	if saveError != nil {
+		return mysql_utils.ParseError(saveError)
 	}
 
-	usersDB[user.Id] = user
+	userId, err := insertResult.LastInsertId()
+	if err != nil {
+		return errors_utils.NewInternalServerError(err.Error())
+	}
+
+	user.Id = int(userId)
 
 	return nil
 }

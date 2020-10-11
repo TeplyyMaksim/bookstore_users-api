@@ -1,4 +1,4 @@
-package utils
+package errors_utils
 
 import "net/http"
 
@@ -21,5 +21,13 @@ func NewNotFoundError(message string) *HttpError {
 		Status:  http.StatusNotFound,
 		Message: message,
 		Error:   "not_found",
+	}
+}
+
+func NewInternalServerError(message string) *HttpError {
+	return &HttpError{
+		Status:  http.StatusInternalServerError,
+		Message: message,
+		Error:   "internal_server_error",
 	}
 }

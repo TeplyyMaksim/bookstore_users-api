@@ -3,7 +3,7 @@ package users
 import (
 	"github.com/TeplyyMaksim/bookstore_users-api/domain/users"
 	"github.com/TeplyyMaksim/bookstore_users-api/services"
-	"github.com/TeplyyMaksim/bookstore_users-api/utils"
+	"github.com/TeplyyMaksim/bookstore_users-api/utils/errors_utils"
 	"github.com/labstack/echo"
 	"net/http"
 	"strconv"
@@ -14,7 +14,7 @@ func CreateUser(c echo.Context) error {
 
 	// c.Bind way of getting user from request
 	if err := c.Bind(&user); err != nil {
-		response := utils.NewBadRequestError(err.Error())
+		response := errors_utils.NewBadRequestError(err.Error())
 		return c.JSON(response.Status, response)
 	}
 
@@ -41,7 +41,7 @@ func GetUser(c echo.Context) error {
 	userId, parseIdErr := strconv.Atoi(c.Param("user_id"))
 
 	if parseIdErr != nil {
-		httpError := utils.NewBadRequestError("Wrong user_id")
+		httpError := errors_utils.NewBadRequestError("Wrong user_id")
 		return c.JSON(httpError.Status, httpError)
 	}
 

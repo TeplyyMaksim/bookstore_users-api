@@ -1,0 +1,113 @@
+# PUT update:
+# Update user with wrong user_id parameter
+PUT http://localhost:1323/users/asdasd
+Content-Type: application/json
+
+{}
+
+###
+
+# Update missing user
+PUT http://localhost:1323/users/452
+Content-Type: application/json
+
+{}
+
+###
+
+# Update user with empty data request
+PUT http://localhost:1323/users/1
+Content-Type: application/json
+
+{}
+
+###
+
+# Update user with strange data
+PUT http://localhost:1323/users/1
+Content-Type: application/json
+
+{
+  "something": "somewhere"
+}
+
+###
+
+# Update user not full data request
+PUT http://localhost:1323/users/1
+Content-Type: application/json
+
+{
+  "first_name": "Not Maksym"
+}
+
+###
+
+# Update user full data request
+PUT http://localhost:1323/users/1
+Content-Type: application/json
+
+{
+  "first_name": "Maksym",
+  "last_name": "Teplyy",
+  "email": "teplyy.maksim@gmail.com",
+}
+
+###
+
+# PATCH update:
+# Update user with wrong user_id parameter
+PATCH http://localhost:1323/users/asdasd
+Content-Type: application/json
+
+{}
+
+###
+
+# Update missing user
+PATCH http://localhost:1323/users/452
+Content-Type: application/json
+
+{}
+
+###
+
+# Update user with empty data request
+PATCH http://localhost:1323/users/1
+Content-Type: application/json
+
+{}
+
+###
+
+# Update user with strange data
+PATCH http://localhost:1323/users/1
+Content-Type: application/json
+
+{
+  "something": "somewhere"
+}
+
+###
+
+# Update user not full data request
+PATCH http://localhost:1323/users/5
+Content-Type: application/json
+
+{
+  "first_name": "Not Maksym"
+}
+
+###
+
+# Update user full data request
+PATCH http://localhost:1323/users/1
+Content-Type: application/json
+
+{
+  "first_name": "Maksym",
+  "last_name": "Teplyy",
+  "email": "teplyy.maksim@gmail.com",
+}
+
+###

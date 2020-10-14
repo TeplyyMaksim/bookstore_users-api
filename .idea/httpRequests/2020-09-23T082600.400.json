@@ -1,3 +1,0 @@
-{"status":400,"message":"Wrong user_id","error":"bad_request"}
-{"status":404,"message":"user 0 not found","error":"not_found"}
-null

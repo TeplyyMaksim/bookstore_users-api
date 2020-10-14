@@ -1,0 +1,30 @@
+# Create user wrong data request
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{}
+
+###
+
+# Create user not full data request
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "first_name": "Maksym"
+}
+
+###
+
+# Create user full data request
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "first_name": "Maksym",
+  "last_name": "Teplyy",
+  "email": "teplyy.maksysaa@gmail.com",
+  "password": "Pass4life$"
+}
+
+###

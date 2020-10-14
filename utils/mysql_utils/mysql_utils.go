@@ -18,7 +18,9 @@ func ParseError(err error) *errors_utils.HttpError {
 			return errors_utils.NewNotFoundError("No record matches given id")
 		}
 
-		return errors_utils.NewInternalServerError("Error parsing database response")
+		return errors_utils.NewInternalServerError(
+			fmt.Sprintf("Error parsing database response %s", err.Error()),
+		)
 	}
 
 	switch sqlErr.Number {

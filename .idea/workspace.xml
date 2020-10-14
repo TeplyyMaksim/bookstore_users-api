@@ -20,17 +20,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1eadd019-4c95-4475-96c8-9ec6848396cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/datasources/mysql/users_db/users_db.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/date_utils/date_utils.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/mysql_utils/mysql_utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl/users/delete_user_request.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl/users/get_user_requests.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl/users/search_users_request.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl/users/update_user_requests.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/users/user_marshaller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/crypto_utils/crypto_utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-22T094138.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-22T101834.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-22T101900.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-22T101928.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-22T102106.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-22T102139.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-22T102531.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-22T102809.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-22T102829.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-22T102907.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-22T102914.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-22T103825.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-23T072310.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-23T072313.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-23T072321.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-23T075343.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-23T075417.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-23T082551.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-23T082600.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-23T082630.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-23T082637.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-23T082642.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-23T082646.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-23T093415.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-23T093422.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-09-23T095228.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-10-12T010833.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-10-12T011023.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-10-12T011036.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-10-12T011043.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-10-12T011134.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-10-12T011139.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-10-12T122536.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-10-12T123119.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-10-12T123123.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-10-12T123131.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-10-12T123221.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-10-12T123719.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-10-12T123821.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-10-12T123930.500.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/url_mappings.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/url_mappings.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ctrl/users/users_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl/users/users_controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl/users/users_requests.http" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl/users/users_requests.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctrl/users/users_requests.http" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl/users/create_user_requests.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/users/user_dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/users/user_dao.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/users/user_dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/users/user_dto.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/users_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/users_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/errors_utils/http.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/date_utils/date_utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/date_utils/date_utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/mysql_utils/mysql_utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/mysql_utils/mysql_utils.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +95,7 @@
   </component>
   <component name="ProjectId" id="1hroYR8vm4iS1r34iSsc1yeUlqy" />
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -80,13 +126,46 @@
       <list>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:1323/users/1024242" />
+          <option name="urlBase" value="http://localhost:1323/internal/users/search" />
           <option name="urlPath" value="" />
           <option name="headers">
             <list>
               <KeyValuePair>
                 <option name="key" value="Content-Type" />
                 <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Public" />
+                <option name="value" value="true" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="status" />
+                <option name="value" value="ACTIVE" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:1323/users/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Public" />
+                <option name="value" value="true" />
               </KeyValuePair>
             </list>
           </option>
@@ -96,13 +175,17 @@
         </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:1323/users/asdasdasd" />
+          <option name="urlBase" value="http://localhost:1323/users/1" />
           <option name="urlPath" value="" />
           <option name="headers">
             <list>
               <KeyValuePair>
                 <option name="key" value="Content-Type" />
                 <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Public" />
+                <option name="value" value="false" />
               </KeyValuePair>
             </list>
           </option>
@@ -139,6 +222,280 @@
             </list>
           </option>
           <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Maksym&quot;,&#10;  &quot;last_name&quot;: &quot;Teplyy&quot;,&#10;  &quot;email&quot;: &quot;teplyy.maksysaa@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;Pass4life$&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:1323/internal/users/search" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="status" />
+                <option name="value" value="ACTIVE" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Maksym&quot;,&#10;  &quot;last_name&quot;: &quot;Teplyy&quot;,&#10;  &quot;email&quot;: &quot;teplyy.maksysaa@gmail.com&quot;,&#10;  &quot;status&quot;: &quot;ACTIVE&quot;,&#10;  &quot;password&quot;: &quot;Pass4life$&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Maksym&quot;,&#10;  &quot;last_name&quot;: &quot;Teplyy&quot;,&#10;  &quot;email&quot;: &quot;teplyy.maksysm@gmail.com&quot;,&#10;  &quot;status&quot;: &quot;ACTIVE&quot;,&#10;  &quot;password&quot;: &quot;Pass4life$&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Maksym&quot;,&#10;  &quot;last_name&quot;: &quot;Teplyy&quot;,&#10;  &quot;email&quot;: &quot;teplyy.maksym@gmail.com&quot;,&#10;  &quot;status&quot;: &quot;ACTIVE&quot;,&#10;  &quot;password&quot;: &quot;Pass4life$&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Lodash&quot;,&#10;  &quot;last_name&quot;: &quot;Moment&quot;,&#10;  &quot;email&quot;: &quot;axios.react@angularro.vue&quot;,&#10;  &quot;status&quot;: &quot;INACTIVE&quot;,&#10;  &quot;password&quot;: &quot;Pass2live$&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:1323/internal/users/search" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="status" />
+                <option name="value" value="Aasdasdasd" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:1323/internal/users/search" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PATCH" />
+          <option name="urlBase" value="http://localhost:1323/users/5" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Not Maksym&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Lodash&quot;,&#10;  &quot;last_name&quot;: &quot;Moment&quot;,&#10;  &quot;email&quot;: &quot;axios.react@angularrr.vue&quot;,&#10;  &quot;status&quot;: &quot;INACTIVE&quot;,&#10;  &quot;password&quot;: &quot;Pass2live$&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Lodash&quot;,&#10;  &quot;last_name&quot;: &quot;Moment&quot;,&#10;  &quot;email&quot;: &quot;axios.react@angularr.vue&quot;,&#10;  &quot;status&quot;: &quot;INACTIVE&quot;,&#10;  &quot;password&quot;: &quot;Pass2live$&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Lodash&quot;,&#10;  &quot;last_name&quot;: &quot;Momenst&quot;,&#10;  &quot;email&quot;: &quot;axios.react@angular.vue&quot;,&#10;  &quot;status&quot;: &quot;INACTIVE&quot;,&#10;  &quot;password&quot;: &quot;Pass2live$&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Lodash&quot;,&#10;  &quot;last_name&quot;: &quot;Moment&quot;,&#10;  &quot;email&quot;: &quot;axios.react@angular.vue&quot;,&#10;  &quot;status&quot;: &quot;INACTIVE&quot;,&#10;  &quot;password&quot;: &quot;Pass2live$&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Maksym&quot;,&#10;  &quot;last_name&quot;: &quot;Teplyy&quot;,&#10;  &quot;email&quot;: &quot;teplyy.maksam@gmail.com&quot;,&#10;  &quot;status&quot;: &quot;ACTIVE&quot;,&#10;  &quot;password&quot;: &quot;Pass4life$&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Maksym&quot;,&#10;  &quot;last_name&quot;: &quot;Teplyy&quot;,&#10;  &quot;email&quot;: &quot;teplyy.maksim@gmail.com&quot;,&#10;  &quot;status&quot;: &quot;ACTIVE&quot;,&#10;  &quot;password&quot;: &quot;Pass4life$&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Maksym&quot;,&#10;  &quot;last_name&quot;: &quot;Teplyy&quot;,&#10;  &quot;email&quot;: &quot;teplyy.maksim@gmail.com&quot;,&#10;  &quot;status&quot;: &quot;ACTIVE&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:1323/users/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
           <option name="textToSend" value="{}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
@@ -156,6 +513,214 @@
           </option>
           <option name="haveTextToSend" value="true" />
           <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Maksym&quot;,&#10;  &quot;last_name&quot;: &quot;Teplyy&quot;,&#10;  &quot;email&quot;: &quot;teplyy.maksim@gmail.com&quot;,&#10;  &quot;date_created&quot;: &quot;&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:1323/users/1024242" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:1323/users/asdasdasd" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PATCH" />
+          <option name="urlBase" value="http://localhost:1323/users/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Maksym&quot;,&#10;  &quot;last_name&quot;: &quot;Teplyy&quot;,&#10;  &quot;email&quot;: &quot;teplyy.maksim@gmail.com&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PATCH" />
+          <option name="urlBase" value="http://localhost:1323/users/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Not Maksym&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:1323/users/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Not Maksym&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:1323/users/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;first_name&quot;: &quot;Maksym&quot;,&#10;  &quot;last_name&quot;: &quot;Teplyy&quot;,&#10;  &quot;email&quot;: &quot;teplyy.maksim@gmail.com&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:1323/users/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;something&quot;: &quot;somewhere&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:1323/users/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:1323/users/asdasd" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:1323/users/452" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:1323/users/1024242" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:1323/users/asdasdasd" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:1323/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
@@ -241,7 +806,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.users_requests#5">
+  <component name="RunManager" selected="HTTP Request.search_users_request#4">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="bookstore_users-api" />
       <working_directory value="$PROJECT_DIR$" />
@@ -257,31 +822,31 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="users_requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ctrl/users/users_requests.http" runType="Run single request">
+    <configuration name="get_user_requests#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ctrl/users/get_user_requests.http" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="users_requests#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ctrl/users/users_requests.http" index="4" runType="Run single request">
+    <configuration name="get_user_requests#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ctrl/users/get_user_requests.http" index="4" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="users_requests#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ctrl/users/users_requests.http" index="5" runType="Run single request">
+    <configuration name="get_user_requests#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ctrl/users/get_user_requests.http" index="5" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="users_requests#6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ctrl/users/users_requests.http" index="6" runType="Run single request">
+    <configuration name="search_users_request#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ctrl/users/search_users_request.http" index="4" runType="Run single request">
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Go Build.go build main.go" />
-      <item itemvalue="HTTP Request.users_requests#1" />
-      <item itemvalue="HTTP Request.users_requests#5" />
-      <item itemvalue="HTTP Request.users_requests#6" />
-      <item itemvalue="HTTP Request.users_requests#4" />
+      <item itemvalue="HTTP Request.get_user_requests#3" />
+      <item itemvalue="HTTP Request.get_user_requests#4" />
+      <item itemvalue="HTTP Request.get_user_requests#5" />
+      <item itemvalue="HTTP Request.search_users_request#4" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.users_requests#5" />
-        <item itemvalue="HTTP Request.users_requests#4" />
-        <item itemvalue="HTTP Request.users_requests#6" />
-        <item itemvalue="HTTP Request.users_requests#1" />
+        <item itemvalue="HTTP Request.search_users_request#4" />
+        <item itemvalue="HTTP Request.get_user_requests#5" />
+        <item itemvalue="HTTP Request.get_user_requests#4" />
+        <item itemvalue="HTTP Request.get_user_requests#3" />
         <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
@@ -319,29 +884,33 @@
       <screen x="-1435" y="-1669" width="3008" height="1669" />
     </state>
     <state x="-813" y="-1121" key="EnvironmentVariablesDialog/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1602448448482" />
-    <state width="1494" height="478" key="GridCell.Tab.0.bottom" timestamp="1602454299261">
+    <state width="1494" height="478" key="GridCell.Tab.0.bottom" timestamp="1602625573602">
       <screen x="-1435" y="-1669" width="3008" height="1669" />
     </state>
-    <state width="1494" height="478" key="GridCell.Tab.0.bottom/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1602454299261" />
-    <state width="1494" height="478" key="GridCell.Tab.0.center" timestamp="1602454299260">
+    <state width="1494" height="478" key="GridCell.Tab.0.bottom/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1602625573602" />
+    <state width="1494" height="478" key="GridCell.Tab.0.center" timestamp="1602625573601">
       <screen x="-1435" y="-1669" width="3008" height="1669" />
     </state>
-    <state width="1494" height="478" key="GridCell.Tab.0.center/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1602454299260" />
-    <state width="1494" height="478" key="GridCell.Tab.0.left" timestamp="1602454299260">
+    <state width="1494" height="478" key="GridCell.Tab.0.center/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1602625573601" />
+    <state width="1494" height="478" key="GridCell.Tab.0.left" timestamp="1602625573601">
       <screen x="-1435" y="-1669" width="3008" height="1669" />
     </state>
-    <state width="1494" height="478" key="GridCell.Tab.0.left/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1602454299260" />
-    <state width="1494" height="478" key="GridCell.Tab.0.right" timestamp="1602454299261">
+    <state width="1494" height="478" key="GridCell.Tab.0.left/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1602625573601" />
+    <state width="1494" height="478" key="GridCell.Tab.0.right" timestamp="1602625573602">
       <screen x="-1435" y="-1669" width="3008" height="1669" />
     </state>
-    <state width="1494" height="478" key="GridCell.Tab.0.right/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1602454299261" />
-    <state x="-966" y="-1098" width="598" height="490" key="find.popup" timestamp="1600871907718">
+    <state width="1494" height="478" key="GridCell.Tab.0.right/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1602625573602" />
+    <state x="-966" y="-1098" width="598" height="518" key="find.popup" timestamp="1602619804710">
       <screen x="-1435" y="-1669" width="3008" height="1669" />
     </state>
-    <state x="-966" y="-1098" width="598" height="490" key="find.popup/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1600871907718" />
-    <state x="-1002" y="-1290" width="670" height="676" key="search.everywhere.popup" timestamp="1600880250496">
+    <state x="-966" y="-1098" width="598" height="518" key="find.popup/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1602619804710" />
+    <state x="-824" y="-1043" key="refactoring.ChangeSignatureDialog" timestamp="1602530902950">
       <screen x="-1435" y="-1669" width="3008" height="1669" />
     </state>
-    <state x="-1002" y="-1290" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1600880250496" />
+    <state x="-824" y="-1043" key="refactoring.ChangeSignatureDialog/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1602530902950" />
+    <state x="-1002" y="-1290" width="670" height="676" key="search.everywhere.popup" timestamp="1602522844519">
+      <screen x="-1435" y="-1669" width="3008" height="1669" />
+    </state>
+    <state x="-1002" y="-1290" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/-1435.-1669.3008.1669@-1435.-1669.3008.1669" timestamp="1602522844519" />
   </component>
 </project>

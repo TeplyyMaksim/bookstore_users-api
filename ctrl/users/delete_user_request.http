@@ -1,0 +1,23 @@
+# Delete user wrong id request
+DELETE http://localhost:1323/users/asdasdasd
+Content-Type: application/json
+
+{}
+
+###
+
+# Delete user with valid id that doesn't exist
+DELETE http://localhost:1323/users/1024242
+Content-Type: application/json
+
+{}
+
+###
+
+# DELETE user with valid id that exists
+DELETE http://localhost:1323/users/1
+Content-Type: application/json
+
+{}
+
+###

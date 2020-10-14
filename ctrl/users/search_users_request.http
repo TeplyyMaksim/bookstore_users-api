@@ -1,0 +1,32 @@
+# Get users without status query request
+GET http://localhost:1323/internal/users/search
+Content-Type: application/json
+
+{}
+
+###
+
+# Get users with strange request status
+GET http://localhost:1323/internal/users/search?status=Aasdasdasd
+Content-Type: application/json
+
+{}
+
+###
+
+# Get users with valid request status
+GET http://localhost:1323/internal/users/search?status=ACTIVE
+Content-Type: application/json
+
+{}
+
+###
+
+# Get user with valid request status and X-Public header
+GET http://localhost:1323/internal/users/search?status=ACTIVE
+Content-Type: application/json
+X-Public: true
+
+{}
+
+###

@@ -15,7 +15,9 @@ func ParseError(err error) *errors_utils.HttpError {
 	sqlErr, ok := err.(*mysql.MySQLError)
 	if !ok {
 		if strings.Contains(err.Error(), errorNoRows) {
-			return errors_utils.NewNotFoundError("No record matches given id")
+			return errors_utils.NewNotFoundError(
+				fmt.Sprintf("No record matches given id %s", err.Error()),
+			)
 		}
 
 		return errors_utils.NewInternalServerError(

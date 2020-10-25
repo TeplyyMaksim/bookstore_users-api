@@ -1,11 +1,18 @@
 package errors_utils
 
-import "net/http"
+import (
+	"errors"
+	"net/http"
+)
 
 type HttpError struct {
 	Status 		int			`json:"status"`
 	Message 	string		`json:"message"`
 	Error		string		`json:"error"`
+}
+
+func NewError (message string) error {
+	return errors.New(message)
 }
 
 func NewBadRequestError(message string) *HttpError {

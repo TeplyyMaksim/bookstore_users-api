@@ -7,7 +7,21 @@ import (
 	"github.com/TeplyyMaksim/bookstore_users-api/utils/errors_utils"
 )
 
-func CreateUser(user users.User) (*users.User, *errors_utils.HttpError) {
+type usersServiceInterface interface {
+	CreateUser(users.User) (*users.User, *errors_utils.HttpError)
+	GetUser(int) (*users.User, *errors_utils.HttpError)
+	UpdateUser (users.User, bool) (*users.User, *errors_utils.HttpError)
+	DeleteUser(int) *errors_utils.HttpError
+	SearchUser(string) (users.Users, *errors_utils.HttpError)
+	LogInUser(users.LoginRequest) (*users.User, *errors_utils.HttpError)
+}
+var (
+	UsersService usersServiceInterface = &usersService{}
+)
+
+type usersService struct {}
+
+func (*usersService) CreateUser(user users.User) (*users.User, *errors_utils.HttpError) {
 	if err := user.Validate(); err != nil {
 		return nil, err
 	}
@@ -22,7 +36,7 @@ func CreateUser(user users.User) (*users.User, *errors_utils.HttpError) {
 	return &user, nil
 }
 
-func GetUser(userId int) (*users.User, *errors_utils.HttpError) {
+func (*usersService) GetUser(userId int) (*users.User, *errors_utils.HttpError) {
 	result := users.User{ Id: userId }
 
 	result.DateCreated = date_utils.GetNowDBFormat()
@@ -33,8 +47,8 @@ func GetUser(userId int) (*users.User, *errors_utils.HttpError) {
 	return &result, nil
 }
 
-func UpdateUser (user users.User, isPartial bool) (*users.User, *errors_utils.HttpError) {
-	current, err := GetUser(user.Id)
+func (*usersService) UpdateUser (user users.User, isPartial bool) (*users.User, *errors_utils.HttpError) {
+	current, err := UsersService.GetUser(user.Id)
 	if err != nil {
 		return nil, err
 	}
@@ -67,12 +81,24 @@ func UpdateUser (user users.User, isPartial bool) (*users.User, *errors_utils.Ht
 	return current, nil
 }
 
-func DeleteUser(userId int) *errors_utils.HttpError {
+func (*usersService) DeleteUser(userId int) *errors_utils.HttpError {
 	user := &users.User{ Id: userId }
 
 	return user.Delete()
 }
 
-func Search(status string) (users.Users, *errors_utils.HttpError) {
+func (*usersService) SearchUser(status string) (users.Users, *errors_utils.HttpError) {
 	return  users.FindByStatus(status)
+}
+
+func (*usersService) LogInUser(request users.LoginRequest) (*users.User, *errors_utils.HttpError) {
+	dao := &users.User{
+		Email: request.Email,
+		Password: crypto_utils.GetMd5(request.Password),
+	}
+	if err := dao.FindByEmailAndPassword(); err != nil {
+		return nil, err
+	}
+
+	return dao, nil
 }

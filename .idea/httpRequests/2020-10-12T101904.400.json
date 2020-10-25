@@ -1,1 +1,0 @@
-{"status":400,"message":"Field should be unique Error 1062: Duplicate entry 'teplyy.maksym@gmail.com' for key 'users.users_email_uindex'","error":"bad_request"}

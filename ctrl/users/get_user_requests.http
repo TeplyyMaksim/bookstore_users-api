@@ -1,5 +1,5 @@
 # Get user wrong id request
-GET http://localhost:1323/users/asdasdasd
+GET http://localhost:8000/users/asdasdasd
 Content-Type: application/json
 
 {}
@@ -7,7 +7,7 @@ Content-Type: application/json
 ###
 
 # Get user with valid id that doesn't exist
-GET http://localhost:1323/users/1024242
+GET http://localhost:8000/users/1024242
 Content-Type: application/json
 
 {}
@@ -15,24 +15,15 @@ Content-Type: application/json
 ###
 
 # Get user with valid id that exists
-GET http://localhost:1323/users/1
+GET http://localhost:8000/users/1
 Content-Type: application/json
-
-{}
-
-###
-
-# Get user with valid id that exists without X-Public header
-GET http://localhost:1323/users/1
-Content-Type: application/json
-X-Public: false
 
 {}
 
 ###
 
 # Get user with valid id that exists with X-Public header
-GET http://localhost:1323/users/1
+GET http://localhost:8000/users/1
 Content-Type: application/json
 X-Public: true
 

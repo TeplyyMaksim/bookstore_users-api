@@ -1,3 +1,368 @@
+POST http://localhost:1323/users/login
+Content-Type: application/json
+
+{
+  "email": "teplyy.maksym@gmail.com",
+  "password": "Pass4life$"
+}
+
+<> 2020-10-19T043821.200.json
+
+###
+
+POST http://localhost:1323/users/login
+Content-Type: application/json
+
+{
+  "email": "teplyy.maksym@gmail.com"
+}
+
+<> 2020-10-19T043818.404.json
+
+###
+
+POST http://localhost:1323/users/login
+Content-Type: application/json
+
+{}
+
+<> 2020-10-19T043814.404.json
+
+###
+
+POST http://localhost:1323/users/login
+Content-Type: application/json
+
+{
+  "email": "teplyy.maksym@gmail.com",
+  "password": "Pass4life$"
+}
+
+<> 2020-10-19T042640.200.json
+
+###
+
+POST http://localhost:1323/users/login
+Content-Type: application/json
+
+{
+  "email": "teplyy.maksym@gmail.com",
+  "password": "Pass4life$"
+}
+
+###
+
+POST http://localhost:1323/users/login
+Content-Type: application/json
+
+{
+  "email": "teplyy.maksym@gmail.com",
+  "password": "Pass4life$"
+}
+
+<> 2020-10-19T042632.200.json
+
+###
+
+POST http://localhost:1323/users/login
+Content-Type: application/json
+
+{
+  "email": "teplyy.maksym@gmail.com",
+  "password": "Pass4life$"
+}
+
+<> 2020-10-19T042358.200.json
+
+###
+
+POST http://localhost:1323/users/login
+Content-Type: application/json
+
+{
+  "email": "teplyy.maksym@gmail.com"
+}
+
+<> 2020-10-19T042354.404.json
+
+###
+
+POST http://localhost:1323/users/login
+Content-Type: application/json
+
+{
+  "email": "teplyy.maksym@gmail.com",
+  "password": "Pass4life$"
+}
+
+<> 2020-10-19T035420.404.json
+
+###
+
+POST http://localhost:1323/users/login
+Content-Type: application/json
+
+{
+  "email": "teplyy.maksym@gmail.com"
+}
+
+<> 2020-10-19T035415.404.json
+
+###
+
+POST http://localhost:1323/users/login
+Content-Type: application/json
+
+{
+  "email": "teplyy.maksym@gmail.com",
+}
+
+<> 2020-10-19T034640.400.json
+
+###
+
+POST http://localhost:1323/users/login
+Content-Type: application/json
+
+{}
+
+<> 2020-10-19T034626.404.json
+
+###
+
+POST http://localhost:1323/users/login
+Content-Type: application/json
+
+{}
+
+<> 2020-10-19T034616.404.json
+
+###
+
+POST http://localhost:1323/users/login
+Content-Type: application/json
+
+{}
+
+<> 2020-10-19T034425.404.json
+
+###
+
+POST http://localhost:1323/users/login
+Content-Type: application/json
+
+{
+  "email": "teplyy.maksym@gmail.com",
+}
+
+<> 2020-10-19T034416.400.json
+
+###
+
+POST http://localhost:1323/users/login
+Content-Type: application/json
+
+{}
+
+<> 2020-10-19T034410.404.json
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "first_name": "Maksym",
+  "last_name": "Teplyy",
+  "email": "teplyy.maksym@gmail.com",
+  "password": "Pass4life$"
+}
+
+<> 2020-10-19T034346.201.json
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "first_name": "Maksym",
+  "last_name": "Teplyy",
+  "email": "teplyy.maksysaa@gmail.com",
+  "password": "Pass4life$"
+}
+
+<> 2020-10-19T034305.201.json
+
+###
+
+DELETE http://localhost:1323/users/1
+Content-Type: application/json
+
+{}
+
+<> 2020-10-19T034258.200.json
+
+###
+
+POST http://localhost:1323/users/login
+Content-Type: application/json
+
+{}
+
+###
+
+GET http://localhost:1323/users/1024242
+Content-Type: application/json
+
+{}
+
+<> 2020-10-14T082008.404.json
+
+###
+
+GET http://localhost:1323/users/1024242
+Content-Type: application/json
+
+{}
+
+<> 2020-10-14T081800.404.json
+
+###
+
+GET http://localhost:1323/users/1024242
+Content-Type: application/json
+
+{}
+
+<> 2020-10-14T081731.404.json
+
+###
+
+GET http://localhost:1323/users/1024242
+Content-Type: application/json
+
+{}
+
+<> 2020-10-14T081712.404.json
+
+###
+
+GET http://localhost:1323/users/1024242
+Content-Type: application/json
+
+{}
+
+<> 2020-10-14T081023.404.json
+
+###
+
+GET http://localhost:1323/users/1024242
+Content-Type: application/json
+
+{}
+
+<> 2020-10-14T080537.404.json
+
+###
+
+GET http://localhost:1323/users/1024242
+Content-Type: application/json
+
+{}
+
+<> 2020-10-14T080323.404.json
+
+###
+
+GET http://localhost:1323/users/1
+Content-Type: application/json
+
+{}
+
+<> 2020-10-14T080313.200.json
+
+###
+
+GET http://localhost:1323/users/1
+Content-Type: application/json
+
+{}
+
+<> 2020-10-14T075846.500.json
+
+###
+
+GET http://localhost:1323/users/1024242
+Content-Type: application/json
+
+{}
+
+<> 2020-10-14T075843.404.json
+
+###
+
+GET http://localhost:1323/users/1024242
+Content-Type: application/json
+
+{}
+
+<> 2020-10-14T075753.404.json
+
+###
+
+GET http://localhost:1323/users/1024242
+Content-Type: application/json
+
+{}
+
+<> 2020-10-14T074755.404.json
+
+###
+
+GET http://localhost:1323/users/asdasdasd
+Content-Type: application/json
+
+{}
+
+<> 2020-10-14T074739.400.json
+
+###
+
+GET http://localhost:1323/users/1
+Content-Type: application/json
+X-Public: true
+
+{}
+
+<> 2020-10-14T052252.200.json
+
+###
+
+GET http://localhost:1323/users/1
+Content-Type: application/json
+X-Public: false
+
+{}
+
+<> 2020-10-14T052240.200.json
+
+###
+
+POST http://localhost:1323/users
+Content-Type: application/json
+
+{
+  "first_name": "Maksym",
+  "last_name": "Teplyy",
+  "email": "teplyy.maksysaa@gmail.com",
+  "password": "Pass4life$"
+}
+
+<> 2020-10-14T052046.400.json
+
+###
+
 GET http://localhost:1323/internal/users/search?status=ACTIVE
 Content-Type: application/json
 X-Public: true
@@ -155,437 +520,6 @@ Content-Type: application/json
 }
 
 <> 2020-10-12T101942.201.json
-
-###
-
-POST http://localhost:1323/users
-Content-Type: application/json
-
-{
-  "first_name": "Maksym",
-  "last_name": "Teplyy",
-  "email": "teplyy.maksysm@gmail.com",
-  "status": "ACTIVE",
-  "password": "Pass4life$"
-}
-
-<> 2020-10-12T101919.201.json
-
-###
-
-POST http://localhost:1323/users
-Content-Type: application/json
-
-{
-  "first_name": "Maksym",
-  "last_name": "Teplyy",
-  "email": "teplyy.maksym@gmail.com",
-  "status": "ACTIVE",
-  "password": "Pass4life$"
-}
-
-<> 2020-10-12T101904.400.json
-
-###
-
-POST http://localhost:1323/users
-Content-Type: application/json
-
-{
-  "first_name": "Maksym",
-  "last_name": "Teplyy",
-  "email": "teplyy.maksym@gmail.com",
-  "status": "ACTIVE",
-  "password": "Pass4life$"
-}
-
-<> 2020-10-12T101816.201.json
-
-###
-
-POST http://localhost:1323/users
-Content-Type: application/json
-
-{
-  "first_name": "Lodash",
-  "last_name": "Moment",
-  "email": "axios.react@angularro.vue",
-  "status": "INACTIVE",
-  "password": "Pass2live$"
-}
-
-<> 2020-10-12T101657.201.json
-
-###
-
-GET http://localhost:1323/internal/users/search?status=ACTIVE
-Content-Type: application/json
-
-{}
-
-<> 2020-10-12T101515.500.json
-
-###
-
-GET http://localhost:1323/internal/users/search?status=ACTIVE
-Content-Type: application/json
-
-{}
-
-<> 2020-10-12T101432.500.json
-
-###
-
-GET http://localhost:1323/internal/users/search?status=ACTIVE
-Content-Type: application/json
-
-{}
-
-<> 2020-10-12T101426.500.json
-
-###
-
-GET http://localhost:1323/internal/users/search?status=ACTIVE
-Content-Type: application/json
-
-{}
-
-<> 2020-10-12T101424.500.json
-
-###
-
-GET http://localhost:1323/internal/users/search?status=ACTIVE
-Content-Type: application/json
-
-{}
-
-<> 2020-10-12T101422.500.json
-
-###
-
-GET http://localhost:1323/internal/users/search?status=ACTIVE
-Content-Type: application/json
-
-{}
-
-<> 2020-10-12T101413.500.json
-
-###
-
-GET http://localhost:1323/internal/users/search?status=ACTIVE
-Content-Type: application/json
-
-{}
-
-<> 2020-10-12T101243.500.json
-
-###
-
-GET http://localhost:1323/internal/users/search?status=Aasdasdasd
-Content-Type: application/json
-
-{}
-
-<> 2020-10-12T101238.200.json
-
-###
-
-GET http://localhost:1323/internal/users/search
-Content-Type: application/json
-
-{}
-
-<> 2020-10-12T101231.200.json
-
-###
-
-GET http://internal/users/search
-Content-Type: application/json
-
-{}
-
-###
-
-PATCH http://localhost:1323/users/5
-Content-Type: application/json
-
-{
-  "first_name": "Not Maksym"
-}
-
-<> 2020-10-12T100911.200.json
-
-###
-
-POST http://localhost:1323/users
-Content-Type: application/json
-
-{
-  "first_name": "Lodash",
-  "last_name": "Moment",
-  "email": "axios.react@angularrr.vue",
-  "status": "INACTIVE",
-  "password": "Pass2live$"
-}
-
-<> 2020-10-12T100804.201.json
-
-###
-
-POST http://localhost:1323/users
-Content-Type: application/json
-
-{
-  "first_name": "Lodash",
-  "last_name": "Moment",
-  "email": "axios.react@angularr.vue",
-  "status": "INACTIVE",
-  "password": "Pass2live$"
-}
-
-<> 2020-10-12T100801.201.json
-
-###
-
-POST http://localhost:1323/users
-Content-Type: application/json
-
-{
-  "first_name": "Lodash",
-  "last_name": "Momenst",
-  "email": "axios.react@angular.vue",
-  "status": "INACTIVE",
-  "password": "Pass2live$"
-}
-
-<> 2020-10-12T100750.400.json
-
-###
-
-POST http://localhost:1323/users
-Content-Type: application/json
-
-{
-  "first_name": "Lodash",
-  "last_name": "Moment",
-  "email": "axios.react@angular.vue",
-  "status": "INACTIVE",
-  "password": "Pass2live$"
-}
-
-<> 2020-10-12T100744.201.json
-
-###
-
-POST http://localhost:1323/users
-Content-Type: application/json
-
-{
-  "first_name": "Maksym",
-  "last_name": "Teplyy",
-  "email": "teplyy.maksam@gmail.com",
-  "status": "ACTIVE",
-  "password": "Pass4life$"
-}
-
-<> 2020-10-12T100712.201.json
-
-###
-
-POST http://localhost:1323/users
-Content-Type: application/json
-
-{
-  "first_name": "Maksym",
-  "last_name": "Teplyy",
-  "email": "teplyy.maksim@gmail.com",
-  "status": "ACTIVE",
-  "password": "Pass4life$"
-}
-
-<> 2020-10-12T100657.400.json
-
-###
-
-POST http://localhost:1323/users
-Content-Type: application/json
-
-{
-  "first_name": "Maksym",
-  "last_name": "Teplyy",
-  "email": "teplyy.maksim@gmail.com",
-  "status": "ACTIVE",
-  "password": "Pass4life$"
-}
-
-<> 2020-10-12T100655.400.json
-
-###
-
-POST http://localhost:1323/users
-Content-Type: application/json
-
-{
-  "first_name": "Maksym",
-  "last_name": "Teplyy",
-  "email": "teplyy.maksim@gmail.com",
-  "status": "ACTIVE",
-  "password": "Pass4life$"
-}
-
-<> 2020-10-12T100646.201.json
-
-###
-
-POST http://localhost:1323/users
-Content-Type: application/json
-
-{
-  "first_name": "Maksym",
-  "last_name": "Teplyy",
-  "email": "teplyy.maksim@gmail.com",
-  "status": "ACTIVE"
-}
-
-<> 2020-10-12T095843.500.json
-
-###
-
-DELETE http://localhost:1323/users/1
-Content-Type: application/json
-
-{}
-
-<> 2020-10-12T080730.200.json
-
-###
-
-POST http://localhost:1323/users
-Content-Type: application/json
-
-{
-  "first_name": "Maksym",
-  "last_name": "Teplyy",
-  "email": "teplyy.maksim@gmail.com",
-  "date_created": ""
-}
-
-<> 2020-10-12T080702.201.json
-
-###
-
-POST http://localhost:1323/users
-Content-Type: application/json
-
-{
-  "first_name": "Maksym",
-  "last_name": "Teplyy",
-  "email": "teplyy.maksim@gmail.com",
-  "date_created": ""
-}
-
-<> 2020-10-12T080617.201.json
-
-###
-
-DELETE http://localhost:1323/users/1024242
-Content-Type: application/json
-
-{}
-
-<> 2020-10-12T080414.200.json
-
-###
-
-DELETE http://localhost:1323/users/asdasdasd
-Content-Type: application/json
-
-{}
-
-<> 2020-10-12T080407.400.json
-
-###
-
-DELETE http://localhost:1323/users/1
-Content-Type: application/json
-
-{}
-
-<> 2020-10-12T080354.200.json
-
-###
-
-POST http://localhost:1323/users
-Content-Type: application/json
-
-{
-  "first_name": "Maksym",
-  "last_name": "Teplyy",
-  "email": "teplyy.maksim@gmail.com",
-  "date_created": ""
-}
-
-<> 2020-10-12T080301.201.json
-
-###
-
-DELETE http://localhost:1323/users/1
-Content-Type: application/json
-
-{}
-
-<> 2020-10-12T080219.200.json
-
-###
-
-POST http://localhost:1323/users
-Content-Type: application/json
-
-{
-  "first_name": "Maksym",
-  "last_name": "Teplyy",
-  "email": "teplyy.maksim@gmail.com",
-  "date_created": ""
-}
-
-<> 2020-10-12T080206.201.json
-
-###
-
-DELETE http://localhost:1323/users/1
-Content-Type: application/json
-
-{}
-
-<> 2020-10-12T080104.200.json
-
-###
-
-POST http://localhost:1323/users
-Content-Type: application/json
-
-{
-  "first_name": "Maksym",
-  "last_name": "Teplyy",
-  "email": "teplyy.maksim@gmail.com",
-  "date_created": ""
-}
-
-<> 2020-10-12T075823.201.json
-
-###
-
-POST http://localhost:1323/users
-Content-Type: application/json
-
-{
-  "first_name": "Maksym",
-  "last_name": "Teplyy",
-  "email": "teplyy.maksim@gmail.com",
-  "date_created": ""
-}
-
-<> 2020-10-12T075756.201.json
 
 ###
 

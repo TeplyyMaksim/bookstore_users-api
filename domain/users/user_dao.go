@@ -2,6 +2,7 @@ package users
 
 import (
 	"github.com/TeplyyMaksim/bookstore_users-api/datasources/mysql/users_db"
+	"github.com/TeplyyMaksim/bookstore_users-api/logger"
 	"github.com/TeplyyMaksim/bookstore_users-api/utils/errors_utils"
 	"github.com/TeplyyMaksim/bookstore_users-api/utils/mysql_utils"
 )
@@ -15,14 +16,18 @@ const (
 		"UPDATE users SET first_name=?, last_name=?, email=?, status=?, password=? WHERE id=?;"
 	queryDeleteUser =
 		"DELETE FROM users WHERE id=?;"
-	queryFindUserByStatus =
+	queryFindByStatus =
 		"SELECT id, first_name, last_name, email, date_created, password FROM users WHERE status=?;"
+	queryFindByEmailAndPasswordAndStatus =
+		"SELECT id, first_name, last_name, date_created, status FROM users WHERE email=? AND password=? AND status=?;"
 )
 
 func (user *User) Get() *errors_utils.HttpError {
 	stmt, err := users_db.Client.Prepare(queryGetUser)
 	if err != nil {
-		return errors_utils.NewInternalServerError(err.Error())
+		error := errors_utils.NewInternalServerError(err.Error())
+		logger.HttpError(error)
+		return error
 	}
 	defer stmt.Close()
 
@@ -36,7 +41,9 @@ func (user *User) Get() *errors_utils.HttpError {
 		&user.Status,
 		&user.Password,
 	); getErr != nil {
-		return mysql_utils.ParseError(getErr)
+		error := mysql_utils.ParseError(getErr)
+		logger.HttpError(error)
+		return error
 	}
 
 	return nil
@@ -45,7 +52,9 @@ func (user *User) Get() *errors_utils.HttpError {
 func (user *User) Save() *errors_utils.HttpError {
 	stmt, err := users_db.Client.Prepare(queryInsertUser)
 	if err != nil {
-		return errors_utils.NewInternalServerError(err.Error())
+		error := errors_utils.NewInternalServerError(err.Error())
+		logger.HttpError(error)
+		return error
 	}
 	defer stmt.Close()
 
@@ -63,7 +72,9 @@ func (user *User) Save() *errors_utils.HttpError {
 
 	userId, err := insertResult.LastInsertId()
 	if err != nil {
-		return errors_utils.NewInternalServerError(err.Error())
+		httpError := errors_utils.NewInternalServerError(err.Error())
+		logger.HttpError(httpError)
+		return httpError
 	}
 
 	user.Id = int(userId)
@@ -74,7 +85,9 @@ func (user *User) Save() *errors_utils.HttpError {
 func (user *User) Update() *errors_utils.HttpError {
 	stmt, err := users_db.Client.Prepare(queryUpdateUser)
 	if err != nil {
-		return errors_utils.NewInternalServerError(err.Error())
+		error := errors_utils.NewInternalServerError(err.Error())
+		logger.HttpError(error)
+		return error
 	}
 	defer stmt.Close()
 
@@ -88,7 +101,9 @@ func (user *User) Update() *errors_utils.HttpError {
 	)
 
 	if updateErr != nil {
-		return mysql_utils.ParseError(updateErr)
+		httpError := mysql_utils.ParseError(updateErr)
+		logger.HttpError(httpError)
+		return httpError
 	}
 
 	return nil
@@ -97,27 +112,35 @@ func (user *User) Update() *errors_utils.HttpError {
 func (user *User) Delete() *errors_utils.HttpError {
 	stmt, err := users_db.Client.Prepare(queryDeleteUser)
 	if err != nil {
-		return errors_utils.NewInternalServerError(err.Error())
+		error := errors_utils.NewInternalServerError(err.Error())
+		logger.HttpError(error)
+		return error
 	}
 	defer stmt.Close()
 
 	if _, saveError := stmt.Exec(user.Id); saveError != nil {
-		return mysql_utils.ParseError(saveError)
+		httpError := mysql_utils.ParseError(saveError)
+		logger.HttpError(httpError)
+		return httpError
 	}
 
 	return nil
 }
 
 func FindByStatus(status string) ([]User, *errors_utils.HttpError) {
-	stmt, err := users_db.Client.Prepare(queryFindUserByStatus)
+	stmt, err := users_db.Client.Prepare(queryFindByStatus)
 	if err != nil {
-		return nil, errors_utils.NewInternalServerError(err.Error())
+		error := errors_utils.NewInternalServerError(err.Error())
+		logger.HttpError(error)
+		return nil, error
 	}
 	defer stmt.Close()
 
 	rows, err := stmt.Query(status)
 	if err != nil {
-		return nil, errors_utils.NewInternalServerError(err.Error())
+		httpError := errors_utils.NewInternalServerError(err.Error())
+		logger.HttpError(httpError)
+		return nil, httpError
 	}
 	defer rows.Close()
 
@@ -140,4 +163,30 @@ func FindByStatus(status string) ([]User, *errors_utils.HttpError) {
 	}
 
 	return results, nil
+}
+
+func (user *User) FindByEmailAndPassword() *errors_utils.HttpError {
+	stmt, err := users_db.Client.Prepare(queryFindByEmailAndPasswordAndStatus)
+	if err != nil {
+		error := errors_utils.NewInternalServerError(err.Error())
+		logger.HttpError(error)
+		return error
+	}
+	defer stmt.Close()
+
+	result := stmt.QueryRow(user.Email, user.Password, StatusActive)
+
+	if getErr := result.Scan(
+		&user.Id,
+		&user.FirstName,
+		&user.LastName,
+		&user.DateCreated,
+		&user.Status,
+	); getErr != nil {
+		error := mysql_utils.ParseError(getErr)
+		logger.HttpError(error)
+		return error
+	}
+
+	return nil
 }

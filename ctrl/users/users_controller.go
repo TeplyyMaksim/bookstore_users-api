@@ -2,6 +2,7 @@ package users
 
 import (
 	"github.com/TeplyyMaksim/bookstore_users-api/domain/users"
+	"github.com/TeplyyMaksim/bookstore_users-api/logger"
 	"github.com/TeplyyMaksim/bookstore_users-api/services"
 	"github.com/TeplyyMaksim/bookstore_users-api/utils/errors_utils"
 	"github.com/labstack/echo"
@@ -39,7 +40,7 @@ func CreateUser(c echo.Context) error {
 	//	return utils.NewBadRequestError(err.Error())
 	//}
 
-	result, err := services.CreateUser(user)
+	result, err := services.UsersService.CreateUser(user)
 
 	if err != nil {
 		return c.JSON(err.Status, err)
@@ -55,7 +56,7 @@ func GetUser(c echo.Context) error {
 		return c.JSON(userIdErr.Status, userIdErr)
 	}
 
-	user, err := services.GetUser(userId)
+	user, err := services.UsersService.GetUser(userId)
 
 	if err != nil {
 		return c.JSON(err.Status, err)
@@ -81,7 +82,7 @@ func UpdateUser(c echo.Context) error {
 
 	isPartial := c.Request().Method == http.MethodPatch
 
-	result, err := services.UpdateUser(user, isPartial)
+	result, err := services.UsersService.UpdateUser(user, isPartial)
 	if err != nil {
 		c.JSON(err.Status, err)
 	}
@@ -96,7 +97,7 @@ func DeleteUser(c echo.Context) error {
 		return c.JSON(userIdErr.Status, userIdErr)
 	}
 
-	if err := services.DeleteUser(userId); err != nil {
+	if err := services.UsersService.DeleteUser(userId); err != nil {
 		return c.JSON(err.Status, err)
 	}
 
@@ -113,15 +114,31 @@ func DeleteUser(c echo.Context) error {
 func Search(c echo.Context) error {
 	status := c.QueryParam("status")
 
-	users, err := services.Search(status)
+	users, err := services.UsersService.SearchUser(status)
 
 	if err != nil {
 		return c.JSON(err.Status, err)
 	}
 
 
-
-
 	isPublic := c.Request().Header.Get("X-Public") == "true"
 	return c.JSON(http.StatusOK, users.Marshall(isPublic))
+}
+
+func Login(c echo.Context) error {
+	var request users.LoginRequest
+
+	if err := c.Bind(&request); err != nil {
+		restErr := errors_utils.NewBadRequestError(err.Error())
+		logger.HttpError(restErr)
+		return c.JSON(restErr.Status, restErr)
+	}
+
+	user, err := services.UsersService.LogInUser(request)
+
+	if err != nil {
+		return c.JSON(err.Status, err)
+	}
+
+	return c.JSON(http.StatusOK, user.Marshall(c.Request().Header.Get("X-Public") == "true"))
 }

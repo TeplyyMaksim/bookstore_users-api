@@ -1,6 +1,6 @@
 # PUT update:
 # Update user with wrong user_id parameter
-PUT http://localhost:1323/users/asdasd
+PUT http://localhost:8000/users/asdasd
 Content-Type: application/json
 
 {}
@@ -8,7 +8,7 @@ Content-Type: application/json
 ###
 
 # Update missing user
-PUT http://localhost:1323/users/452
+PUT http://localhost:8000/users/452
 Content-Type: application/json
 
 {}
@@ -16,7 +16,7 @@ Content-Type: application/json
 ###
 
 # Update user with empty data request
-PUT http://localhost:1323/users/1
+PUT http://localhost:8000/users/1
 Content-Type: application/json
 
 {}
@@ -24,7 +24,7 @@ Content-Type: application/json
 ###
 
 # Update user with strange data
-PUT http://localhost:1323/users/1
+PUT http://localhost:8000/users/1
 Content-Type: application/json
 
 {
@@ -34,7 +34,7 @@ Content-Type: application/json
 ###
 
 # Update user not full data request
-PUT http://localhost:1323/users/1
+PUT http://localhost:8000/users/1
 Content-Type: application/json
 
 {
@@ -44,7 +44,7 @@ Content-Type: application/json
 ###
 
 # Update user full data request
-PUT http://localhost:1323/users/1
+PUT http://localhost:8000/users/1
 Content-Type: application/json
 
 {
@@ -57,7 +57,7 @@ Content-Type: application/json
 
 # PATCH update:
 # Update user with wrong user_id parameter
-PATCH http://localhost:1323/users/asdasd
+PATCH http://localhost:8000/users/asdasd
 Content-Type: application/json
 
 {}
@@ -65,7 +65,7 @@ Content-Type: application/json
 ###
 
 # Update missing user
-PATCH http://localhost:1323/users/452
+PATCH http://localhost:8000/users/452
 Content-Type: application/json
 
 {}
@@ -73,7 +73,7 @@ Content-Type: application/json
 ###
 
 # Update user with empty data request
-PATCH http://localhost:1323/users/1
+PATCH http://localhost:8000/users/1
 Content-Type: application/json
 
 {}
@@ -81,7 +81,7 @@ Content-Type: application/json
 ###
 
 # Update user with strange data
-PATCH http://localhost:1323/users/1
+PATCH http://localhost:8000/users/1
 Content-Type: application/json
 
 {
@@ -91,7 +91,7 @@ Content-Type: application/json
 ###
 
 # Update user not full data request
-PATCH http://localhost:1323/users/5
+PATCH http://localhost:8000/users/5
 Content-Type: application/json
 
 {
@@ -101,7 +101,7 @@ Content-Type: application/json
 ###
 
 # Update user full data request
-PATCH http://localhost:1323/users/1
+PATCH http://localhost:8000/users/1
 Content-Type: application/json
 
 {

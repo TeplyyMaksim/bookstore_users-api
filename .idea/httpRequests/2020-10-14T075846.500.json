@@ -1,0 +1,1 @@
+{"status":500,"message":"Error parsing database response sql: expected 7 destination arguments in Scan, not 8","error":"internal_server_error"}
